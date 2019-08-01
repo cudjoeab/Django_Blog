@@ -1,0 +1,96 @@
+/* RGB */
+/* $color1: rgba(251, 175, 66, 1);
+$color2: rgba(245, 224, 183, 1);
+$color3: rgba(139, 191, 159, 1);
+$color4: rgba(237, 136, 135, 1);
+$color5: rgba(89, 52, 79, 1); */
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+header {
+    color: rgba(89, 52, 79, 1);
+    
+    
+}
+body {
+    background: rgba(139, 191, 159, .5);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 1em; 
+    text-align: justify;     
+    max-width: 100%;
+    padding: 20px; 
+}
+
+article {
+    max-width: 100%;
+    margin: 30px auto; 
+    background: rgba(245, 224, 183, 0.75); 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.full_blog{
+    display: grid;
+    grid-template-columns: 1fr; 
+    width: 100%; 
+    border-radius: 20px; 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(89, 52, 79, 1); 
+}
+
+a:hover {
+    color: rgba(237, 136, 135, 1);
+}
+
+ul, li {
+    list-style-type: none;
+    text-align: left;
+     
+}
+ul {
+    overflow: scroll;
+    padding: 3em;  
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/* make sticky notes https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
+ul li {
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform:rotate(-6deg);
+    margin: 1em;
+    
+  }
+
+  ul {
+    
+  }
+
+section {
+    border-top: 3px dotted rgba(237, 136, 135, 1); 
+}
+
+footer{
+    color: white;
+    font-weight: 600;
+    text-align: right;
+    padding: 10px;
+}
+
+
+

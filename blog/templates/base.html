@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <h1>Getting down with Django</h2> 
+            <h2>Date: {{ current_time }}</h2>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %} 
+    </main>
+    
+    <footer>
+        <p>These are the building blogs of Django. </p>
+    </footer>
+</body>
+</html>

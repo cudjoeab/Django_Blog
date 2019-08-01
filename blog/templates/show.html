@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="full_blog">
+    <h2>{{ article.title }}</h2>
+    <h4>By {{ article.author }}</h4>
+    <p> {{ article.body }} </p>
+    <h3>Comments:</h3>
+<ul class = "comments">
+    {% for comment in article.comments.all %}
+    <li class = "comment">{{ comment.name }} : <em>{{ comment.message }}</em></li>
+    {% endfor %}
+</ul>
+
+<section>
+<h3> Post a comment below</h3>
+
+<form action="{% url 'create_comment' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="article" value="{{ article.pk }}"/>
+    Name: <br>
+    <input type="text" name="name"/><br>
+    Comment: <br>
+    <textarea rows ="10" cols="50" type ="text" name="message"></textarea>
+    <input type="submit" value="Post"/>
+</form>
+</section>
+
+</main>
+
+{% endblock %}
+
