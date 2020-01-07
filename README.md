@@ -2,9 +2,6 @@
 creating a blog using Django 
 
 
-user: admin
-password: admin 
-
 
  <!-- <dl>
             <dt>What is a client?</dt>
